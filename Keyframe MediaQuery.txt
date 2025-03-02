@@ -1,0 +1,104 @@
+BREAKPOINTS max-width
+
+small smartphones
+    480px
+
+large smartphones
+    640px
+
+tablets
+    768px
+
+laptops
+    1024px
+
+desktops
+    1280px
+
+
+
+KEYFRAMES ANIMATION
+
+p{
+  animation:pointdown 1000ms infinite alternate-reverse;
+}
+
+
+@keyframes pointdown{
+  0%{
+    transform: translateY(0);
+  }
+
+  100%{
+    transform: translateY(16px);
+  }
+}
+
+MEDIA QUERY 
+
+@media (max-width:480px) {
+	p{
+	font-size:60px;
+	}
+}
+
+BOX-SIZING 
+
+border-box total of 
+
+content
+padding
+border
+
+
+content-box default only counts
+size of the content
+
+
+
+
+.box{
+  width:200px;
+  height:150px;
+  border:8px solid red;
+  padding:8px 16px;
+  margin:8px 16px;
+  box-sizing:border-box;
+}
+
+PSUEDO CLASS
+
+button{
+  transition:300ms;
+}
+
+button:hover{
+  opacity:30%;
+  background-color:red;
+  padding:4px;
+}
+
+PSUEDO ELEMENT
+
+p::before{
+  content:"My Name is ";
+  background-color:red;
+  margin:4px;
+}
+
+p::after{
+  content:"Stephen";
+}
+
+
+BEM
+
+Box 
+Element 
+Modifier
+
+<div class="box"> BOX
+  <h2 class="box__title">Title</h2> ELEMENT
+  <p class="box__paragraph">Text</p> ELEMENT
+  <button class="box__button box__button--active">Text</button> ELEMENT MODIFIER
+</div>

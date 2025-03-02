@@ -1,0 +1,21 @@
+GIT is a version control system for tracking and saving changes in your code
+
+GITHUB is a website for hosting your git repositories
+
+COMMANDS
+
+create repository command line
+
+echo "# notes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rdztr2020/notes.git
+git push -u origin main
+
+push existing repository command line
+
+git remote add origin https://github.com/rdztr2020/notes.git
+git branch -M main
+git push -u origin main
