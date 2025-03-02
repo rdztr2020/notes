@@ -7,11 +7,13 @@ COMMANDS
 create repository command line
 
 echo "# notes" >> README.md
+
 git init
+git add .
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/rdztr2020/notes.git
+
 git push -u origin main
 
 push existing repository command line
@@ -19,3 +21,7 @@ push existing repository command line
 git remote add origin https://github.com/rdztr2020/notes.git
 git branch -M main
 git push -u origin main
+
+git add .
+git commit -m "first commit"
+git push
